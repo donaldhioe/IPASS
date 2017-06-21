@@ -5,9 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import nl.hu.v1wac.firstapp.persistence.BaseDAO;
+import nl.hu.v1wac.firstapp.persistence.BaseDAOoud;
 
-public class UserDAO extends BaseDAO {
+public class UserDAO extends BaseDAOoud {
 	public String findRoleForUsernameAndPassword(String username, String password) {
 		String role = null;
 		String query = "SELECT role FROM useraccount WHERE username = ? AND password = ?";
